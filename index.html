@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♥♥هـ❣ـہديهـ❣ـہ آلعـ❣ـہيد ♥♥</title>
+    <style>
+        /* --- خلفية سماء ليلية عميقة وساحرة --- */
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #01112e 0%, #000 100%);
+            overflow: hidden;
+            font-family: 'Avenir Next', 'Helvetica Neue', sans-serif;
+            position: relative;
+        }
+
+        /* --- حاوية النجوم خلف البرواز --- */
+        .stars-container {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: 0;
+        }
+
+        .star {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            animation: twinkle var(--duration) infinite ease-in-out;
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.3); }
+        }
+
+        /* --- تصميم البرواز النيون الفخم الجديد --- */
+        .card {
+            background: rgba(10, 10, 10, 0.5);
+            backdrop-filter: blur(25px);
+            border-radius: 25px; 
+            padding: 50px 30px; /* تقليل الحشوة قليلاً ليناسب النص الطويل */
+            text-align: center;
+            width: 85%;
+            max-width: 450px; /* توسيع العرض قليلاً */
+            z-index: 10;
+            position: relative;
+            border: 4px solid #fff; 
+            box-shadow: 
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #ff4d6d,
+                0 0 40px #ff4d6d,
+                0 0 70px #ff4d6d,
+                0 0 80px #ff4d6d,
+                inset 0 0 15px rgba(255, 77, 109, 0.5);
+            animation: neonPulse 2s infinite ease-in-out;
+            overflow: hidden;
+        }
+
+        @keyframes neonPulse {
+            0%, 100% {
+                box-shadow: 
+                    0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff4d6d,
+                    0 0 40px #ff4d6d, 0 0 70px #ff4d6d, 0 0 80px #ff4d6d,
+                    inset 0 0 15px rgba(255, 77, 109, 0.5);
+            }
+            50% {
+                box-shadow: 
+                    0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff4d6d,
+                    0 0 20px #ff4d6d, 0 0 35px #ff4d6d, 0 0 40px #ff4d6d,
+                    inset 0 0 10px rgba(255, 77, 109, 0.3);
+                border-color: rgba(255, 255, 255, 0.8);
+            }
+        }
+
+        /* تنسيق العناوين (اسم العيد) */
+        h1 { 
+            color: #fff; 
+            font-size: 2.2rem; /* تقليل الحجم قليلاً */
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff4d6d, 0 0 30px #ff4d6d;
+        }
+        
+        /* --- تنسيق نص الرسالة (المشكلة هنا وتم حلها) --- */
+        p {
+            color: #ffffff; /* لون أبيض ثلجي واضح جداً */
+            font-size: 1.2rem; /* حجم مناسب للقراءة */
+            line-height: 1.8; /* مسافة مريحة بين السطور */
+            margin-bottom: 40px;
+            font-weight: 300; /* خط خفيف وأنيق */
+            opacity: 1; /* وضوح كامل */
+            /* توهج خفيف للنص ليتناسب مع النيون */
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+        }
+
+        /* تنسيق الزر النيون */
+        .btn {
+            background: transparent;
+            color: #ff4d6d;
+            border: 2px solid #ff4d6d;
+            padding: 15px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            cursor: pointer;
+            box-shadow: 0 0 10px #ff4d6d, inset 0 0 10px #ff4d6d;
+            transition: all 0.4s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .btn:hover { 
+            transform: translateY(-5px) scale(1.03); 
+            background: #ff4d6d;
+            color: #fff;
+            box-shadow: 0 0 30px #ff4d6d, 0 0 60px #ff4d6d, inset 0 0 20px #fff;
+        }
+
+        /* تنسيق القلوب النيون المتساقطة */
+        .heart {
+            position: absolute;
+            color: #ff4d6d;
+            font-size: 25px;
+            pointer-events: none;
+            animation: fall linear forwards;
+            z-index: 11;
+            text-shadow: 0 0 5px #fff, 0 0 10px #ff4d6d;
+        }
+
+        @keyframes fall {
+            to { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="stars-container" id="stars"></div>
+
+    <div class="card">
+        <h1>كُـ‘ـُلُـ‘ـُ سُـ‘ـُنُـ‘ـُهـُ‘ـُ وٌٱنُـ‘ـُتُـ‘ـُيُـ‘ـُ بُـ‘ـُخُـ‘ـُيُـ‘ـُر ❤️</h1>
+        
+        <p>
+            كل سنة وإنتِ طيبة يا أمي الحبيبة 🤍🌙<br>
+            يارب يكون عيد سعيد عليكي ومليان راحة وفرحة وسعادة يا أغلى إنسانة في حياتي 💐<br>
+            ربنا يديكي الصحة والعافية وطولة العمر ويخليكي ليا وما يحرمنيش من دعواتك أبدًا 🤲<br>
+            إنتِ البركة في البيت، والحنان اللي ملوش حدود، ومن غيرك الدنيا ملهاش طعم ❤️<br>
+            مهما أقول مش هقدر أوصف قد إيه أنا بحبك وممتن لكل حاجة عملتيها عشاني ✨<br>
+            ربنا يفرح قلبك دايمًا زي ما بتفرّحي قلوبنا، ويجعل كل أيامك أعياد وسعادة يا أجمل أم في الدنيا 🌸<br>
+            بحبك حب مالوش آخر 💖
+        </p>
+
+        <button class="btn" onclick="startSurprise()">اسمعي المفاجأة 🎵</button>
+        
+        <audio id="audio" loop>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script>
+        // توليد النجوم برمجياً في الخلفية
+        const starsContainer = document.getElementById('stars');
+        const starCount = 180;
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = (Math.random() * 3 + 1) + 'px'; 
+            star.style.width = size;
+            star.style.height = size;
+            star.style.left = Math.random() * 100 + 'vw';
+            star.style.top = Math.random() * 100 + 'vh';
+            star.style.setProperty('--duration', (Math.random() * 3 + 1.5) + 's');
+            starsContainer.appendChild(star);
+        }
+
+        function startSurprise() {
+            // محاولة تشغيل الصوت
+            document.getElementById("audio").play().catch(error => {
+                console.log("المتصفح منع التشغيل التلقائي، جرب مرة أخرى");
+            });
+
+            // تغيير نص الزر
+            const btn = document.querySelector('.btn');
+            btn.innerHTML = "بحبك للأبد";
+
+            // تأثير القلوب المتساقطة
+            setInterval(() => {
+                const h = document.createElement('div');
+                h.className = 'heart';
+                h.innerHTML = '❤️';
+                h.style.left = Math.random() * 100 + 'vw';
+                h.style.top = '-30px';
+                h.style.fontSize = (Math.random() * 10 + 20) + 'px'; 
+                h.style.animationDuration = (Math.random() * 2.5 + 2) + 's'; 
+                document.body.appendChild(h);
+                setTimeout(() => h.remove(), 5000);
+            }, 250); 
+        }
+    </script>
+</body>
+</html>
+
